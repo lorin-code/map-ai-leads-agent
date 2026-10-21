@@ -1,0 +1,22 @@
+{
+  "name": "g-map-leads",
+  "version": "0.1.0",
+  "private": true,
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "description": "AMap POI lead collector in Node.js",
+  "scripts": {
+    "start": "npm --prefix web run dev",
+    "test": "node --test",
+    "web:typecheck": "npm --prefix web run typecheck",
+    "web:build": "npm --prefix web run build"
+  },
+  "bin": {
+    "amap-leads": "server/bin/amap-leads.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "sqlite3": "^6.0.1"
+  }
+}

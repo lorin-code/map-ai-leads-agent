@@ -1,0 +1,44 @@
+# Credentials and local configuration
+.env*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Dependencies, builds, and editor caches
+node_modules
+.next/
+out/
+dist/
+coverage/
+*.tsbuildinfo
+.DS_Store
+.idea/
+.vscode/
+
+# Runtime data, exports, and browser artifacts
+/data/
+/exports/
+/output/
+.playwright-cli/
+playwright-report/
+test-results/
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.csv
+*.log
+data_amap.json
+
+# Internal documents and agent configuration are not part of the public release
+/AGENTS.md
+**/AGENTS.md
+.agents/
+.codex/
+.claude/
+/docs/*
+!/docs/screenshots/

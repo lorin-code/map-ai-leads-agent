@@ -1,0 +1,30 @@
+{
+  "name": "g-map-web",
+  "version": "0.1.0",
+  "private": true,
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "description": "Next.js frontend shell for 门店线索助手",
+  "scripts": {
+    "dev": "node -e \"require('node:fs').rmSync('.next',{recursive:true,force:true})\" && node scripts/with-root-env.js next dev --turbopack --hostname 127.0.0.1 --port 3005",
+    "build": "node -e \"require('node:fs').rmSync('.next',{recursive:true,force:true})\" && node scripts/with-root-env.js next build",
+    "start": "node scripts/with-root-env.js next start --hostname 127.0.0.1 --port 3005",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "dependencies": {
+    "next": "15.5.3",
+    "react": "19.1.1",
+    "react-dom": "19.1.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.1.13",
+    "@types/node": "24.6.0",
+    "@types/react": "19.1.13",
+    "@types/react-dom": "19.1.9",
+    "postcss": "8.5.6",
+    "tailwindcss": "4.1.13",
+    "typescript": "5.9.3"
+  }
+}
