@@ -1,6 +1,6 @@
 # AI 线索助手 · Map AI Leads Agent
 
-**源码公开，仅限非商业用途。** 当前版本采用 [PolyForm Noncommercial 1.0.0](LICENSE)，不授予商业使用权。
+本项目采用 [GNU AGPL-3.0](LICENSE) 开源，允许商业使用。修改后通过网络提供服务时，须按许可证向使用者提供该版本的对应源码获取方式。
 
 面向地图数据接入的 AI 线索 Agent，使用 **Next.js、DeepSeek 和 SQLite** 构建。用中文描述目标城市、区域和行业，查找公开 POI 数据，在工作台继续筛选、保存会话并导出 CSV。
 
@@ -51,6 +51,7 @@ DEEPSEEK_BASE_URL=https://api.deepseek.com
 DEEPSEEK_MODEL=your_available_model_id
 SQLITE_PATH=data/app.db
 NEXT_PUBLIC_SITE_URL=http://127.0.0.1:3005
+NEXT_PUBLIC_SOURCE_URL=https://github.com/lorin-code/map-ai-leads-agent
 ```
 
 `DEEPSEEK_MODEL` 应填写你的服务商当前支持的模型 ID；环境模板中的值可自行替换。`SQLITE_PATH` 相对于项目根目录解析，数据库会在运行时自动创建。
@@ -124,8 +125,10 @@ CLI 可写出原始 JSON 用于本地调试；Web 工作台面向用户只提供
 
 欢迎通过 [Issues](https://github.com/lorin-code/map-ai-leads-agent/issues) 报告问题或提交 Pull Request。提交前运行 `npm test` 和 `npm run web:typecheck`；涉及前端的修改请附截图。
 
-项目代码采用 [PolyForm Noncommercial License 1.0.0](LICENSE)。允许许可证规定的非商业使用、修改和分发，必须保留许可证和版权声明。本许可不授予商业使用权；商业用途须另行获得著作权人的书面授权。
+Copyright (c) 2026 lorin-code。本项目代码按 [GNU Affero General Public License v3.0 only](LICENSE)（SPDX：`AGPL-3.0-only`）授权，允许商业使用、修改和分发。
 
-项目属于源码公开（source-available），不属于 OSI 定义的开源软件。第三方依赖与地图数据分别遵循其原有许可证及服务条款，本许可不改变第三方权利。
+分发受本许可证覆盖的程序时，须按 AGPL-3.0 提供对应源码并保留版权和许可声明。修改后通过网络提供交互服务时，也必须向所有远程交互用户显著提供免费获取该修改版对应源码的机会；是否收费不影响这些义务。具体范围和条件以许可证全文为准。
 
-自 2026 年 10 月 21 日起，本仓库当前发布版本采用上述非商业许可。
+公开页面页脚和工作台标题旁提供“源代码”入口，默认指向本仓库。部署修改版时，使用 `NEXT_PUBLIC_SOURCE_URL` 指向实际部署版本的公开源码、标签或下载地址；对应源码应包含许可证要求的构建和运行所需材料，不能仅链接到未包含自己修改的上游版本。该变量在前端构建时写入，修改后需要重新构建。
+
+本软件不提供任何担保。第三方依赖与地图数据分别遵循其原有许可证及服务条款。

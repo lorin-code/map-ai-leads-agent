@@ -2,7 +2,7 @@
   "name": "g-map-leads",
   "version": "0.1.0",
   "private": true,
-  "license": "PolyForm-Noncommercial-1.0.0",
+  "license": "AGPL-3.0-only",
   "description": "AMap POI lead collector in Node.js",
   "scripts": {
     "start": "npm --prefix web run dev",

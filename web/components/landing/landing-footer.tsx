@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { sourceCodeUrl } from "@/lib/source-code";
+
 import { SparkIcon } from "./landing-icons";
 
 const footerLinks = [
@@ -31,6 +33,9 @@ export function LandingFooter() {
               {link.label}
             </Link>
           ))}
+          <a className="transition-colors hover:text-slate-900" href={sourceCodeUrl} rel="noopener noreferrer" target="_blank">
+            源代码
+          </a>
         </div>
       </div>
     </footer>

@@ -2,7 +2,7 @@
   "name": "g-map-web",
   "version": "0.1.0",
   "private": true,
-  "license": "PolyForm-Noncommercial-1.0.0",
+  "license": "AGPL-3.0-only",
   "description": "Next.js frontend shell for 门店线索助手",
   "scripts": {
     "dev": "node -e \"require('node:fs').rmSync('.next',{recursive:true,force:true})\" && node scripts/with-root-env.js next dev --turbopack --hostname 127.0.0.1 --port 3005",

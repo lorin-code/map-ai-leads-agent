@@ -1,5 +1,7 @@
 import type { FormEvent } from "react";
 
+import { sourceCodeUrl } from "@/lib/source-code";
+
 import {
   formatTaskSummary,
   messageIdentity,
@@ -160,10 +162,18 @@ export function ConversationPane({
     <section className="flex h-full min-h-0 min-w-0 flex-col overflow-hidden rounded-[2.25rem] border border-white/80 bg-white/72 shadow-[0_24px_80px_rgba(15,23,42,0.10)] backdrop-blur-2xl">
       <header className="shrink-0 border-b border-white/70 px-5 py-5 sm:px-7">
         <div className="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between">
-          <div className="min-w-0 flex-1">
+          <div className="flex min-w-0 flex-1 flex-wrap items-center gap-3">
             <h1 className="text-3xl font-black tracking-[-0.05em] text-slate-900">
               AI 线索助手
             </h1>
+            <a
+              className="shrink-0 text-xs font-medium text-slate-500 underline decoration-slate-300 underline-offset-4 transition hover:text-indigo-600"
+              href={sourceCodeUrl}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              源代码
+            </a>
           </div>
 
           <div className="grid gap-3 rounded-[1.6rem] border border-white/80 bg-white/72 px-4 py-4 shadow-sm sm:grid-cols-3">
